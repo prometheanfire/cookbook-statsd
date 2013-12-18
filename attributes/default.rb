@@ -1,0 +1,9 @@
+default['statsd']['graphitePort'] = '80'
+default['statsd']['graphiteHost'] = '127.0.0.1'
+default['statsd']['debug'] = false
+default['statsd']['address'] = '0.0.0.0'
+default['statsd']['port'] = 8125
+default['statsd']['mgmt_port'] = 8126
+default['statsd']['title'] = 'statsd'
+default['statsd']['flushInterval'] = 60000
+default['statsd']['backends'] = [ "./backends/graphite" ]

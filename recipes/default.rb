@@ -38,9 +38,6 @@ template "/opt/statsd/config.js" do
   mode 0644
   owner "root"
   group "root"
-  variables ({
-    :port => 8125
-  })
 end
 
 runit_service "statsd" do
