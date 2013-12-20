@@ -25,11 +25,11 @@ package "git" do
 end
 
 execute "git_clone" do
-    user "root"
-    group "root"
-    command "git clone git://github.com/etsy/statsd.git /opt/statsd"
-    creates "/opt/statsd"
-  end
+  user "root"
+  group "root"
+  command "git clone git://github.com/etsy/statsd.git /opt/statsd"
+  creates "/opt/statsd"
+end
 
 template "/opt/statsd/config.js" do
   source "statsd-config.js.erb"
