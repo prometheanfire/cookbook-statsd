@@ -1,4 +1,4 @@
-default['statsd']['graphitePort'] = '80'
+default['statsd']['graphitePort'] = '2003'
 default['statsd']['graphiteHost'] = '127.0.0.1'
 default['statsd']['debug'] = false
 default['statsd']['address'] = '0.0.0.0'

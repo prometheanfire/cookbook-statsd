@@ -24,14 +24,12 @@ package "git" do
   action :install
 end
 
-if node.chef_environment == "test"
-  execute "git_clone" do
+execute "git_clone" do
     user "root"
     group "root"
     command "git clone git://github.com/etsy/statsd.git /opt/statsd"
     creates "/opt/statsd"
   end
-end
 
 template "/opt/statsd/config.js" do
   source "statsd-config.js.erb"
